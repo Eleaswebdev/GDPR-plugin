@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- main style css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font awesome css -->
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h2 class="center-text">GDPR plugin layout design|Puredevs</h2>
+    <div class="total-div">
+        <div class="row">
+
+            <div class="col-lg-3 pt-2">
+
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'gs')" id="defaultOpen">General Settings</button>
+                    <button class="tablinks" onclick="openCity(event, 'bs')">Banner & Button settings</button>
+                    <button class="tablinks" onclick="openCity(event, 'cs')">Cookie Screen Settings</button>
+                    <button class="tablinks" onclick="openCity(event, 'po')" id="defaultOpen">Primary overview</button>
+                    <button class="tablinks" onclick="openCity(event, 'gl')">Geo Location</button>
+                    <button class="tablinks" onclick="openCity(event, 'es')">Export/import Settings</button>
+                    <button class="tablinks" onclick="openCity(event, 'Help')">Help</button>
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-9 pt-2">
+
+                <div id="gs" class="tabcontent">
+                    <h3>Primary Settings</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <p>Primary Status</p>
+                        </div>
+                        <div class="col-lg-5">
+
+
+                                <!--
+                                <button type="button" class="btn btn-danger">Disable</button>
+                                <button type="button" class="btn new">Enable</button>
+                                 -->
+                                <label class='toggle-label'>
+                                    <input type='checkbox'/>
+                                    <span class='back'>
+                                    <span class='toggle'></span>
+                                    <span class='label on'>Enable</span>
+                                    <span class='label off'>Disable</span>
+	                               </span>
+                                </label>
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="row pt-2">
+                        <div class="col-lg-7">
+                            <p>Cookie Bar as</p>
+                        </div>
+                        <div class="col-lg-5">
+
+
+                            <select name='select'>
+
+                                <option value="Banner">Banner</option>
+                                <option value="Popup">Popup</option>
+                            </select>
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="row pt-2">
+                        <div class="col-lg-7">
+                            <p>Cookie Bar Position</p>
+                        </div>
+                        <div class="col-lg-5">
+
+
+                            <select name="select">
+                                <option value="header">Header</option>
+                                <option value="footer">Footer</option>
+
+                            </select>
+
+
+                        </div>
+                    </div>
+
+                    <div class="row pt-2">
+                        <div class="col-lg-7">
+                            <p>On Load</p>
+                        </div>
+                        <div class="col-lg-5">
+
+
+                            <select name="select">
+                                <option value="animate">Animate</option>
+                                <option value="sticky">Sticky</option>
+
+                            </select>
+
+
+                        </div>
+                    </div>
+
+                    <div class="row pt-2">
+                        <div class="col-lg-7">
+                            <p>On Hide</p>
+                        </div>
+                        <div class="col-lg-5">
+
+
+                            <select name="select">
+                                <option value="animate">Animate</option>
+                                <option value="disappear">Disappear</option>
+
+                            </select>
+
+
+                        </div>
+                    </div>
+
+                    <div class="row pt-2">
+                        <div class="col-lg-7">
+                            <p>Auto-hide cookie bar when user scroll</p>
+                        </div>
+                        <div class="col-lg-5">
+
+                            <label class='toggle-label'>
+                                <input type='checkbox'/>
+                                <span class='back'>
+                                    <span class='toggle'></span>
+                                    <span class='label on'>Enable</span>
+                                    <span class='label off'>Disable</span>
+	                               </span>
+                            </label>
+
+                        </div>
+                    </div>
+
+                    <div class="row pt-2">
+                        <div class="col-lg-7">
+                            <p>Reload after reject button click</p>
+                        </div>
+                        <div class="col-lg-5">
+
+                            <label class='toggle-label'>
+                                <input type='checkbox'/>
+                                <span class='back'>
+                                    <span class='toggle'></span>
+                                    <span class='label on'>Enable</span>
+                                    <span class='label off'>Disable</span>
+	                               </span>
+                            </label>
+
+                        </div>
+                    </div>
+                    <hr>
+
+                    <h3>Show again tab settings</h3>
+                    <hr>
+
+
+                    <div class="row pt-2">
+                        <div class="col-lg-7">
+                            <p>Show again tab visible</p>
+                        </div>
+                        <div class="col-lg-5">
+
+                            <label class='toggle-label'>
+                                <input type='checkbox'/>
+                                <span class='back'>
+                                    <span class='toggle'></span>
+                                    <span class='label on'>Enable</span>
+                                    <span class='label off'>Disable</span>
+	                               </span>
+                            </label>
+
+                        </div>
+                    </div>
+
+                    <div class="row pt-2">
+                        <div class="col-lg-7">
+                            <p>Tab Position</p>
+                        </div>
+                        <div class="col-lg-5">
+
+                            <select name="select">
+                                <option value="Bottom right">Bottom right</option>
+                                <option value="Bottom left">Bottom left</option>
+                                <option value="top right">Top right</option>
+                                <option value="top left">Top left</option>
+
+                            </select>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row pt-2">
+                        <div class="col-lg-9">
+                            <p></p>
+
+
+                        </div>
+                        <div class="col-lg-3">
+
+                            <button type="button" class="btn savebtn">Save changes</button>
+
+
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+
+                <div id="bs" class="tabcontent">
+                    <h3>Banner & Button settings</h3>
+                    <p>Paris is the capital of France.</p>
+                </div>
+
+                <div id="cs" class="tabcontent">
+                    <h3>Cookie Screen Settings</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+                <div id="po" class="tabcontent">
+                    <h3>Primary overview</h3>
+                    <p>London is the capital city of England.</p>
+                </div>
+
+                <div id="gl" class="tabcontent">
+                    <h3>Geo Location</h3>
+                    <p>Paris is the capital of France.</p>
+                </div>
+
+                <div id="es" class="tabcontent">
+                    <h3>Export/import Settings</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+                <div id="Help" class="tabcontent">
+                    <h3>Tokyo</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script>
+
+</script>
+
+<script>
+
+</script>
+
+<script src="js/jquery-1.12.4.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/functions.js"></script>
+
+</body>
+</html>
